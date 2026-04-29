@@ -20,11 +20,11 @@ export default function Home() {
 
       <main className="flex flex-col items-center">
         {/* Hero */}
-        <section className="w-full max-w-6xl px-6 py-24 text-center">
+        <section className="w-full max-w-6xl px-6 py-16 text-center sm:py-24">
           <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
             The Returns ML Lab for E-commerce
           </p>
-          <h1 className="mx-auto max-w-3xl text-5xl font-bold leading-tight tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-6xl">
+          <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
             Predict Returns.{" "}
             <span className="text-indigo-600 dark:text-indigo-400">
               Keep Profit.
@@ -53,7 +53,7 @@ export default function Home() {
         </section>
 
         {/* Problem */}
-        <section className="w-full max-w-6xl px-6 py-24">
+        <section className="w-full max-w-6xl px-6 py-16 sm:py-24">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
               Fashion e-com loses $850B/year to returns
@@ -112,7 +112,7 @@ export default function Home() {
         {/* How it works */}
         <section
           id="how-it-works"
-          className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 py-24"
+          className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 py-16 sm:py-24"
         >
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-2xl text-center mb-16">
@@ -161,7 +161,7 @@ export default function Home() {
         </section>
 
         {/* SHOPIFY DEMO */}
-        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 py-24">
+        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-2xl text-center mb-14">
               <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-4">
@@ -180,7 +180,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* API sample */}        <section className="w-full max-w-6xl px-6 py-24">
+        {/* API sample */}        <section className="w-full max-w-6xl px-6 py-16 sm:py-24">
           <div className="mx-auto max-w-2xl text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
               One call. Full picture.
@@ -190,7 +190,7 @@ export default function Home() {
               response body.
             </p>
           </div>
-          <div className="mx-auto max-w-2xl rounded-2xl bg-zinc-900 dark:bg-zinc-950 p-6 text-sm font-mono text-zinc-300 overflow-x-auto shadow-xl">
+          <div className="mx-auto max-w-2xl rounded-2xl bg-zinc-900 dark:bg-zinc-950 p-4 sm:p-6 text-xs sm:text-sm font-mono text-zinc-300 overflow-x-auto shadow-xl">
             <pre>{`// POST /v1/score
 {
   "session_id": "usr_8f2a",
@@ -218,7 +218,7 @@ export default function Home() {
         </section>
 
         {/* Differentiators */}
-        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 py-24">
+        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 py-16 sm:py-24">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
@@ -270,11 +270,11 @@ export default function Home() {
         </section>
 
         {/* Outcome */}
-        <section className="w-full max-w-6xl px-6 py-24 text-center">
+        <section className="w-full max-w-6xl px-6 py-16 text-center sm:py-24">
           <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-4">
             The outcome
           </p>
-          <h2 className="mx-auto max-w-2xl text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
+          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl lg:text-5xl">
             3–6% fewer returns.
             <br />
             Zero conversion loss.
@@ -293,7 +293,7 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-indigo-600 dark:bg-indigo-700 py-24">
+        <section className="w-full border-t border-zinc-100 dark:border-zinc-800 bg-indigo-600 dark:bg-indigo-700 py-16 sm:py-24">
           <div className="mx-auto max-w-2xl px-6 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Ready to stop leaving profit in the returns bin?

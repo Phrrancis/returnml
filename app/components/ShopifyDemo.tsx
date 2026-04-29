@@ -119,7 +119,7 @@ export default function ShopifyDemo() {
             <div className="w-3 h-3 rounded-full bg-amber-400" />
             <div className="w-3 h-3 rounded-full bg-emerald-400" />
           </div>
-          <div className="flex-1 mx-3 bg-white dark:bg-zinc-700 rounded text-xs text-zinc-400 dark:text-zinc-400 px-3 py-1 font-mono">
+          <div className="flex-1 mx-3 bg-white dark:bg-zinc-700 rounded text-xs text-zinc-400 dark:text-zinc-400 px-3 py-1 font-mono truncate">
             modanova.myshopify.com/collections
           </div>
         </div>
@@ -177,9 +177,9 @@ export default function ShopifyDemo() {
               <div className="w-3 h-3 rounded-full bg-amber-400" />
               <div className="w-3 h-3 rounded-full bg-emerald-400" />
             </div>
-            <div className="flex-1 mx-3 bg-white dark:bg-zinc-700 rounded text-xs text-zinc-400 dark:text-zinc-400 px-3 py-1 font-mono">
-              modanova.myshopify.com/cart
-            </div>
+          <div className="flex-1 mx-3 bg-white dark:bg-zinc-700 rounded text-xs text-zinc-400 dark:text-zinc-400 px-3 py-1 font-mono truncate">
+            modanova.myshopify.com/cart
+          </div>
           </div>
 
           <div className="bg-white dark:bg-zinc-900 p-6">
