@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "ReturnML — Predict Returns. Keep Profit.",
   description:
     "ReturnML is the real-time API that predicts which e-commerce carts will be returned before checkout — and tells you the most profitable action to take. Cut returns 3–6% without hurting conversion.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: [{ url: "/favicon.ico" }],
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +35,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         {children}
         <SpeedInsights />
         <Analytics />
