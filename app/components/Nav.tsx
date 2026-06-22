@@ -1,18 +1,11 @@
 "use client";
 
 import React from "react";
-
-function track(event: string, params: Record<string, unknown>) {
-  try {
-    if (typeof window !== "undefined" && (window as unknown as Record<string, unknown>).gtag) {
-      (window as unknown as Record<string, (event: string, params: Record<string, unknown>) => void>).gtag(event, params);
-    }
-  } catch {}
-}
+import { track } from "../utils/track";
 
 export default function Nav() {
   return (
-    <header className="w-full border-b border-zinc-100 dark:border-zinc-800">
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-100 dark:border-zinc-800 bg-white/90 dark:bg-zinc-950/90 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         <span className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
           ReturnML

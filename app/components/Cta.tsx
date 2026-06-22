@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-
-function track(event: string, params: Record<string, unknown>) {
-  try {
-    if (typeof window !== "undefined" && (window as unknown as Record<string, unknown>).gtag) {
-      (window as unknown as Record<string, (event: string, params: Record<string, unknown>) => void>).gtag(event, params);
-    }
-  } catch {}
-}
+import { track } from "../utils/track";
 
 export default function Cta() {
   return (
@@ -18,7 +11,7 @@ export default function Cta() {
           Ready to stop leaving profit in the returns bin?
         </h2>
         <p className="mt-4 text-lg text-indigo-100">
-          ReturnML is in early access. Request a spot and we'll set you up
+          ReturnML is in early access. Request a spot and we&apos;ll set you up
           with a sandbox environment and a pilot plan.
         </p>
         <a

@@ -12,7 +12,7 @@ export default function Outcome() {
         Zero conversion loss.
       </h2>
       <p className="mx-auto mt-6 max-w-xl text-xl text-zinc-600 dark:text-zinc-400">
-        For a €100M fashion brand, that's{" "}
+        For a €100M fashion brand, that&apos;s{" "}
         <span className="font-semibold text-zinc-900 dark:text-zinc-50">
           €2–3M in net margin per year.
         </span>{" "}

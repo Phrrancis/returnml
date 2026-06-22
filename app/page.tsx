@@ -7,6 +7,7 @@ import ShopifyDemoSection from "./components/ShopifyDemoSection";
 import ApiSample from "./components/ApiSample";
 import Differentiators from "./components/Differentiators";
 import Outcome from "./components/Outcome";
+import Faq from "./components/Faq";
 import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <ApiSample />
         <Differentiators />
         <Outcome />
+        <Faq />
         <Cta />
       </main>
       <Footer />
