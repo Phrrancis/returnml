@@ -1,4 +1,5 @@
 import React from "react";
+import { XCircle, CheckCircle } from "lucide-react";
 
 const ITEMS = [
   {
@@ -43,11 +44,13 @@ export default function Problem() {
             }`}
           >
             <p
-              className={`text-sm font-semibold mb-3 ${
+              className={`flex items-center gap-2 text-sm font-semibold mb-3 ${
                 bad ? "text-red-600 dark:text-red-400" : "text-indigo-600 dark:text-indigo-400"
               }`}
             >
-              {bad ? "❌  " : "✓  "}
+              {bad
+                ? <XCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
+                : <CheckCircle className="w-4 h-4 shrink-0" aria-hidden="true" />}
               {label}
             </p>
             <p className="text-zinc-700 dark:text-zinc-300">{description}</p>

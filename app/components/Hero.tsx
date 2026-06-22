@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { track } from "../utils/track";
 
 export default function Hero() {
   return (
@@ -20,6 +21,7 @@ export default function Hero() {
         <a
           id="waitlist"
           href="mailto:francis@returnml.com"
+          onClick={() => track("cta_click", { location: "hero" })}
           className="rounded-full bg-indigo-600 px-8 py-3 text-base font-semibold text-white shadow transition-colors hover:bg-indigo-500"
         >
           Request early access
