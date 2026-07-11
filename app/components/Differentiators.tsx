@@ -4,9 +4,9 @@ import { Zap, Timer, ShieldCheck, BookOpen } from "lucide-react";
 const ITEMS = [
   {
     icon: <Zap className="w-6 h-6" aria-hidden="true" />,
-    title: "Day-1 accuracy",
+    title: "Verified before you act",
     description:
-      "Cross-merchant embeddings mean the model is useful from your very first order — no cold-start waiting period.",
+      "The shadow pilot IS the proof: we show you precision and recall on your own carts before a single prediction changes anything for a customer.",
   },
   {
     icon: <Timer className="w-6 h-6" aria-hidden="true" />,
@@ -34,11 +34,12 @@ export default function Differentiators() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
-            Not just prediction. Uplift.
+            Not just a guess. Verified.
           </h2>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-            Most tools say &ldquo;this order is risky&rdquo;. ReturnML says &ldquo;if you
-            charge delivery, you&apos;ll make €2.40 more than if you do nothing.&rdquo;
+            Most tools say &ldquo;this order is risky&rdquo;. ReturnML says &ldquo;offering
+            the non-returnable coupon would have made you €4.10 more than doing
+            nothing — and here&apos;s the verified data that proves it.&rdquo;
             That&apos;s causal ML, not correlation.
           </p>
         </div>

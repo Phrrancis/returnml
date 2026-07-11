@@ -3,27 +3,35 @@ import React from "react";
 const FAQS = [
   {
     q: "How long does integration take?",
-    a: "Under a day. Drop in our SDK or fire a single POST to /v1/score when a user hits the checkout page. No data pipeline, no model training, no sprint.",
+    a: "Under a day. Drop in our SDK or fire a single POST to /v1/score when a user hits the cart page. No data pipeline, no model training, no sprint.",
+  },
+  {
+    q: "Will my customers see anything during the pilot?",
+    a: "No. The 60-day shadow pilot is fully read-only — we score every cart in the background. No checkout copy, pricing, or flow changes for a single customer until you explicitly opt in to actions.",
   },
   {
     q: "Do we need historical return data?",
-    a: "No. Cross-merchant embeddings make ReturnML accurate from your very first order — the cold-start problem is solved before you go live.",
+    a: "No history required to start scoring — but we don't ask you to trust the model blind either. The shadow pilot IS the proof: we show you precision and recall on your own carts before you act on a single prediction.",
   },
   {
-    q: "Is it GDPR compliant?",
-    a: "Yes. We process cart metadata only — no PII is stored or transferred. All data is processed ephemerally at inference time and discarded immediately after the response.",
+    q: "How do you verify predictions?",
+    a: "We join every scored cart against actual return and refund outcomes from Shopify's returns API once the return window closes — typically 30–45 days. We wait for label maturity of 60+ days before reporting, so the accuracy numbers you see are verified on your own data, not a vendor benchmark.",
+  },
+  {
+    q: "What data do you keep?",
+    a: "Hashed cart/session IDs and outcome labels only — no PII, GDPR-clean. Under the pilot terms, anonymized outcome data helps improve our cross-merchant models; this is stated transparently upfront and you can opt out at cancellation.",
   },
   {
     q: "Which actions can we configure?",
-    a: "Charge a delivery fee, apply a percentage coupon, or do nothing. You set the thresholds; ReturnML returns the expected profit delta for each option so you decide.",
+    a: "The flagship action is an opt-in, non-returnable coupon offered at checkout. A personalized delivery charge is available as an advanced option. You set the thresholds; ReturnML returns the simulated profit delta for each option so you decide — and these only go live after the pilot.",
   },
   {
     q: "What if our stack isn't Shopify?",
-    a: "ReturnML is platform-agnostic. Works with Shopify Plus, Salesforce Commerce Cloud, Magento, and any custom stack via our REST API.",
+    a: "We're launching with Shopify Plus first. ReturnML's scoring API is platform-agnostic under the hood, so Salesforce Commerce Cloud, Magento, and custom stacks can follow via the same REST API.",
   },
   {
     q: "How are VIP customers protected?",
-    a: "Guardrails are built in. First-time buyers and high-LTV customers are automatically excluded from any friction actions — you never risk charging your best customers by mistake.",
+    a: "Guardrails are built in for when actions go live. First-time buyers and high-LTV customers are automatically excluded from any friction actions — you never risk charging your best customers by mistake.",
   },
 ];
 

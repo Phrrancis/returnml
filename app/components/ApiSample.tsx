@@ -8,25 +8,27 @@ export default function ApiSample() {
           One call. Full picture.
         </h2>
         <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-          Risk score + expected profit per action, straight from the response body.
+          Risk score + simulated profit per action, logged for the Money
+          Report — nothing here is executed against the customer in shadow mode.
         </p>
       </div>
       <div className="mx-auto max-w-2xl rounded-2xl bg-zinc-900 dark:bg-zinc-950 p-4 sm:p-6 text-xs sm:text-sm font-mono text-zinc-300 overflow-x-auto shadow-xl">
         <pre>{`// POST /v1/score
 {
   "session_id": "usr_8f2a",
+  "mode": "shadow",
   "cart": [
     { "sku": "DRESS-M-RED", "qty": 2 },
     { "sku": "JEANS-32", "qty": 1 }
   ]
 }
 
-// Response (47 ms)
+// Response (47 ms) — logged, not executed
 {
   "return_risk": 0.83,
-  "actions": [
-    { "type": "charge_delivery", "delta_profit": 2.40 },
+  "simulated_actions": [
     { "type": "coupon_5pct", "delta_profit": 4.10 },
+    { "type": "charge_delivery", "delta_profit": 2.40 },
     { "type": "do_nothing", "delta_profit": 0.00 }
   ],
   "explanation": [

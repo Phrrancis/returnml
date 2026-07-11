@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Problem from "./components/Problem";
 import HowItWorks from "./components/HowItWorks";
 import ShopifyDemoSection from "./components/ShopifyDemoSection";
+import MoneyReport from "./components/MoneyReport";
 import ApiSample from "./components/ApiSample";
 import Differentiators from "./components/Differentiators";
 import Outcome from "./components/Outcome";
@@ -20,6 +21,7 @@ export default function Home() {
         <Problem />
         <HowItWorks />
         <ShopifyDemoSection />
+        <MoneyReport />
         <ApiSample />
         <Differentiators />
         <Outcome />

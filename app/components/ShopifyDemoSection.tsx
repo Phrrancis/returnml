@@ -10,12 +10,13 @@ export default function ShopifyDemoSection() {
             Live demo
           </p>
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
-            See it in action
+            See the silent scoring in action
           </h2>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
             Add items to the cart below. When you hit checkout, ReturnML
-            scores the cart in real time and recommends the most profitable
-            action.
+            scores the cart in real time — exactly as it would in shadow
+            mode. The customer sees nothing; the score and simulated action
+            are just logged for the Money Report.
           </p>
         </div>
         <ShopifyDemo />
