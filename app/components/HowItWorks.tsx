@@ -9,15 +9,21 @@ const STEPS = [
   },
   {
     step: "02",
-    title: "Score in <50 ms",
+    title: "We watch, silently",
     description:
-      "ReturnML returns a return risk score and the incremental profit for each available action — charge delivery, offer a coupon, or do nothing.",
+      "For 60 days ReturnML scores every cart in the background. No customer-facing changes, no pricing changes, zero conversion risk.",
   },
   {
     step: "03",
-    title: "Decide",
+    title: "You get the Money Report",
     description:
-      "You choose the action. ReturnML explains why with SHAP: \"3 similar items in cart · 62% hist. return rate · COD payment.\"",
+      "Verified prediction accuracy on your own carts, euros lost to flagged carts, and the simulated profit of each intervention — with SHAP explanations behind every score.",
+  },
+  {
+    step: "04",
+    title: "Turn on actions (optional)",
+    description:
+      "Only once the numbers convince you. Start with an opt-in, non-returnable coupon — the least scary action available.",
   },
 ];
 
@@ -33,10 +39,10 @@ export default function HowItWorks() {
             How it works
           </h2>
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
-            Three steps from zero data to live profit decisions.
+            From zero data to verified proof — before you act on a single prediction.
           </p>
         </div>
-        <ol className="grid gap-10 sm:grid-cols-3">
+        <ol className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map(({ step, title, description }) => (
             <li key={step} className="flex flex-col gap-4">
               <span className="text-4xl font-bold text-indigo-200 dark:text-indigo-900">

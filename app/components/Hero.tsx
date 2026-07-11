@@ -7,15 +7,17 @@ export default function Hero() {
   return (
     <section className="w-full max-w-6xl px-6 py-16 text-center sm:py-24">
       <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">
-        The Returns ML Lab for E-commerce
+        Return-Prediction Verification for Shopify Plus
       </p>
       <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
-        Predict Returns. <span className="text-indigo-600 dark:text-indigo-400">Keep Profit.</span>
+        Prove it <span className="text-indigo-600 dark:text-indigo-400">before you change anything.</span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-xl leading-relaxed text-zinc-600 dark:text-zinc-400">
-        One API call at checkout. ReturnML scores the return risk of every
-        cart in under 50&nbsp;ms and tells you the most profitable
-        action — so you stop losing €8 on orders that come straight back.
+        Drop in one API call at the cart page. For 60 days ReturnML scores
+        every cart silently — nothing changes for your customers. Then we
+        show you, on your own data, exactly what returns cost you and what
+        our predictions would have saved. Scoring itself runs in under
+        50&nbsp;ms.
       </p>
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
         <a
@@ -24,7 +26,7 @@ export default function Hero() {
           onClick={() => track("cta_click", { location: "hero" })}
           className="rounded-full bg-indigo-600 px-8 py-3 text-base font-semibold text-white shadow transition-colors hover:bg-indigo-500"
         >
-          Request early access
+          Start a free 60-day shadow pilot
         </a>
         <a
           href="#how-it-works"

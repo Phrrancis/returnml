@@ -46,8 +46,8 @@ function computeScore(cart: CartItem[]): ScoreResult {
     return_risk: +risk.toFixed(2),
     latency_ms: 34 + Math.floor(Math.random() * 24),
     actions: [
-      { type: "charge_delivery", label: "Charge €5 delivery", delta_profit: chargeProfit },
-      { type: "coupon_5pct", label: "Offer 5% keep-it coupon", delta_profit: couponProfit },
+      { type: "coupon_5pct", label: "Non-returnable coupon (opt-in)", delta_profit: couponProfit },
+      { type: "charge_delivery", label: "Charge €5 delivery (advanced)", delta_profit: chargeProfit },
       { type: "do_nothing", label: "Do nothing", delta_profit: 0 },
     ],
     explanation,
@@ -237,7 +237,7 @@ export default function ShopifyDemo() {
           <div className="rounded-2xl border border-indigo-200 dark:border-indigo-800/60 bg-indigo-50 dark:bg-indigo-950/40 overflow-hidden shadow-sm">
             <div className="px-6 py-4 border-b border-indigo-100 dark:border-indigo-800/40 flex items-center justify-between">
               <span className="text-sm font-semibold text-indigo-700 dark:text-indigo-300">
-                ReturnML
+                ReturnML — logged silently, customer sees nothing
               </span>
               {result && (
                 <span className="text-xs font-mono text-indigo-400 dark:text-indigo-500">
@@ -250,7 +250,7 @@ export default function ShopifyDemo() {
               <div className="px-6 py-8 text-center">
                 <div className="inline-block w-6 h-6 border-2 border-indigo-400 border-t-transparent rounded-full animate-spin mb-3" />
                 <p className="text-sm text-indigo-600 dark:text-indigo-400">
-                  Scoring cart…
+                  Scoring cart in the background…
                 </p>
               </div>
             )}
@@ -285,7 +285,7 @@ export default function ShopifyDemo() {
                 {/* Actions */}
                 <div>
                   <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-widest mb-3">
-                    Recommended Actions
+                    Simulated actions (not shown to customer)
                   </p>
                   <div className="space-y-2">
                     {result.actions
@@ -341,7 +341,7 @@ export default function ShopifyDemo() {
                   onClick={handleCheckout}
                   className="w-full rounded-xl bg-indigo-600 text-white py-3 text-sm font-semibold transition-colors hover:bg-indigo-500"
                 >
-                  Complete Checkout
+                  Continue to checkout
                 </button>
               </div>
             )}
@@ -350,10 +350,11 @@ export default function ShopifyDemo() {
               <div className="px-6 py-8 text-center space-y-2">
                 <p className="text-2xl">✓</p>
                 <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
-                  Order placed
+                  Customer checked out normally
                 </p>
                 <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                  ReturnML action applied at checkout in {result.latency_ms}&nbsp;ms
+                  Nothing changed for them — score logged silently in{" "}
+                  {result.latency_ms}&nbsp;ms for the Money Report.
                 </p>
               </div>
             )}

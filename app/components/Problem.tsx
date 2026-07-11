@@ -17,7 +17,7 @@ const ITEMS = [
   {
     label: "ReturnML",
     description:
-      "Score the cart before checkout. Charge, coupon, or do nothing — based on actual expected profit.",
+      "Score every cart silently for 60 days. See exactly what returns cost you — then decide if and when to act.",
     bad: false,
   },
 ];
@@ -27,7 +27,7 @@ export default function Problem() {
     <section className="w-full max-w-6xl px-6 py-16 sm:py-24">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
-          Fashion e-com loses $850B/year to returns
+          Fashion e-com loses €850B/year to returns
         </h2>
         <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
           Most brands fight it with two bad tools.

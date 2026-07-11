@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- plain CommonJS script, run directly via `node` */
 const { promises: fs } = require('fs');
 const path = require('path');
 
@@ -5,7 +6,7 @@ const outDir = path.join(process.cwd(), '.next', 'static');
 
 async function findHtmlFiles(dir, files = []) {
   let entries;
-  try { entries = await fs.readdir(dir, { withFileTypes: true }); } catch (e) { return files; }
+  try { entries = await fs.readdir(dir, { withFileTypes: true }); } catch { return files; }
   for (const entry of entries) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) await findHtmlFiles(full, files);

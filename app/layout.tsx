@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 const DESCRIPTION =
-  "ReturnML is the real-time API that predicts which e-commerce carts will be returned before checkout — and tells you the most profitable action to take. Cut returns 3–6% without hurting conversion.";
+  "ReturnML is a return-prediction verification service for Shopify Plus fashion brands. Score every cart silently for 60 days, get a verified Money Report on your own data, then decide if you want to act — zero conversion risk.";
 
 export const metadata: Metadata = {
   title: "ReturnML — Predict Returns. Keep Profit.",

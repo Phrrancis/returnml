@@ -15,7 +15,7 @@ export default function Nav() {
           onClick={() => track("cta_click", { location: "nav_access" })}
           className="rounded-full bg-zinc-900 dark:bg-zinc-50 px-5 py-2 text-sm font-medium text-white dark:text-zinc-900 transition-colors hover:bg-zinc-700 dark:hover:bg-zinc-200"
         >
-          Request access
+          Start free pilot
         </a>
       </div>
     </header>
